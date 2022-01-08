@@ -23,5 +23,10 @@ end
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem "rubocop", "~> 1.24"
 end
+gem "contentful", "~> 2.16"
 
+gem "github-markup", "~> 4.0"
+
+gem "commonmarker", "~> 0.23.2"
