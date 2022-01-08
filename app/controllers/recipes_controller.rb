@@ -1,13 +1,11 @@
 class RecipesController < ApplicationController
-  def service
-    @service ||= RecipeService.new
-  end
+  include MsRecipes::Deps[:recipe_service]
 
   def index
-    @recipes = service.list_all
+    @recipes = recipe_service.list_all
   end
 
   def show
-    @recipe = service.get_by_id(params[:id])
+    @recipe = recipe_service.get_by_id(params[:id])
   end
 end

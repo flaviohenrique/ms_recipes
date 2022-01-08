@@ -1,7 +1,5 @@
 class RecipeService
-  def initialize(repository = ::Recipes::Repository.new)
-    @repository = repository
-  end
+  include MsRecipes::Deps['recipes.repository']
 
   delegate :list_all, :get_by_id, to: :@repository
 end

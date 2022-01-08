@@ -30,3 +30,5 @@ gem "contentful", "~> 2.16"
 gem "github-markup", "~> 4.0"
 
 gem "commonmarker", "~> 0.23.2"
+
+gem "dry-rails", "~> 0.4.0"
