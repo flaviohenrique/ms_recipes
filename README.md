@@ -5,7 +5,7 @@
 ### Clone the repository
 
 ```shell
-git clone https://github.com/flaviohenrique/ms_recipes.git
+git clone git@github.com:flaviohenrique/ms_recipes.git
 cd ms_recipes
 ```
 
@@ -28,6 +28,7 @@ rbenv install 3.1.0
 Using [Bundler](https://github.com/bundler/bundler):
 
 ```shell
+gem install bundler
 bundle install
 ```
 ## Serve
@@ -35,12 +36,12 @@ bundle install
 You can start the rails server using the command given below.
 
 ```shell
-rails s
+bundle exec rails s
 ```
 And now you can visit the site with the URL http://localhost:3000
 
 ## Running specs
 
 ```shell
-rspec spec
+bundle exec rspec spec
 ```
