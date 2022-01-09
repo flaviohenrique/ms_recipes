@@ -13,8 +13,9 @@ require:
 # See https://docs.rubocop.org/rubocop/configuration
 AllCops:
   TargetRubyVersion: 3.0
-  AllCops:
-    NewCops: enable
+  NewCops: enable
+  Exclude:
+    - 'bin/**/*'
 
 Style/Documentation:
   Enabled: false

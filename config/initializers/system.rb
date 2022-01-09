@@ -1,4 +1,4 @@
-Dry::Rails.container do |a|
+Dry::Rails.container do |_a|
   config.component_dirs.add 'app/domain'
   config.component_dirs.add 'app/services'
 
