@@ -32,3 +32,5 @@ gem "github-markup", "~> 4.0"
 gem "commonmarker", "~> 0.23.2"
 
 gem "dry-rails", "~> 0.4.0"
+
+gem "pagy", "~> 5.7"

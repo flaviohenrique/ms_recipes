@@ -1,8 +1,9 @@
 class RecipesController < ApplicationController
+  include Paginable
   include MsRecipes::Deps[:recipe_service]
 
   def index
-    @recipes = recipe_service.list_all
+    @recipes, @pagy = paginate_results(recipe_service.list_paged(paginate_params))
   end
 
   def show
