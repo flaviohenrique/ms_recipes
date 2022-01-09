@@ -1,24 +1,46 @@
-# README
+# MS Recipes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Install
 
-Things you may want to cover:
+### Clone the repository
 
-* Ruby version
+```shell
+git clone https://github.com/flaviohenrique/ms_recipes.git
+cd ms_recipes
+```
 
-* System dependencies
+### Check your Ruby version
 
-* Configuration
+```shell
+ruby -v
+```
 
-* Database creation
+The ouput should start with something like `ruby 3.1.0`
 
-* Database initialization
+If not, install the right ruby version using [rbenv](https://github.com/rbenv/rbenv) (it could take a while):
 
-* How to run the test suite
+```shell
+rbenv install 3.1.0
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Install dependencies
 
-* Deployment instructions
+Using [Bundler](https://github.com/bundler/bundler):
 
-* ...
+```shell
+bundle install
+```
+## Serve
+
+You can start the rails server using the command given below.
+
+```shell
+rails s
+```
+And now you can visit the site with the URL http://localhost:3000
+
+## Running specs
+
+```shell
+rspec spec
+```
