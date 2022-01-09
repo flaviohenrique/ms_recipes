@@ -1,0 +1,24 @@
+<article class="container" >
+    <h2 class="recipe-title" ><%= @recipe.title %></h2>
+    <%= link_to "Back", recipes_path %>
+
+    <div class="float-start m-4 mt-0" >
+        <%= image_tag @recipe.image_url %>
+    </div>
+    <% if @recipe.chef_name.present? %>
+        <p class="recipe-chef">
+            <strong>Chef:</strong> <%= @recipe.chef_name %>
+        <p>
+    <% end %>
+    <p>
+        <%= recipe_description_html(@recipe.description) %>
+    <p>
+    <% if @recipe.tags.any? %>
+        <p class="recipe-tags">
+            <strong>Tags:</strong>
+            <% @recipe.tags.each do |tag| %>
+                <span class="btn btn-sm btn-outline-primary"><%= tag %></span>
+            <% end %>
+        <p>
+    <% end %>
+</article>
